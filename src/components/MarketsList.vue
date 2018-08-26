@@ -1,4 +1,4 @@
-<script src="./HelloComponent.js"></script>
+<script src="./MarketsListComponent.js"></script>
 <template>
   <v-container fluid>
     <v-slide-y-transition mode="out-in">

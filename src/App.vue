@@ -1,52 +1,76 @@
+<script src="./AppComponent.js"></script>
+
 <template>
   <v-app light>
     <v-content>
+      <v-layout
+          wrap
+          style="height: 200px;"
+        >
+          <v-container>
+            <v-layout justify-left>
+              <v-btn
+                dark
+                @click.stop="drawer = !drawer"
+              >
+                Menu
+              </v-btn>
+            </v-layout>
+          </v-container>
+
+          <v-navigation-drawer
+            v-model="drawer"
+            absolute
+            temporary
+          >
+            <v-list class="pa-1">
+              <v-list-tile avatar>
+                <v-list-tile-avatar>
+                 <!-- <img src="https://randomuser.me/api/portraits/men/85.jpg">-->
+                </v-list-tile-avatar>
+
+                <v-list-tile-content>
+                  <v-list-tile-title>John Leider</v-list-tile-title>
+                </v-list-tile-content>
+              </v-list-tile>
+            </v-list>
+
+            <v-list class="pt-0" dense>
+              <v-divider></v-divider>
+
+              <v-list-tile>
+                <v-list-tile-action>
+                  <v-icon>dashboard</v-icon>
+                </v-list-tile-action>
+
+                <v-list-tile-content>
+                  <v-list-tile-title>
+                     <router-link to="/markets-list">Farmers Market List</router-link>
+                  </v-list-tile-title>
+                </v-list-tile-content>
+              </v-list-tile>
+
+               <v-list-tile>
+                <v-list-tile-action>
+                  <v-icon>question_answer</v-icon>
+                </v-list-tile-action>
+
+                <v-list-tile-content>
+                  <v-list-tile-title>
+                    <a target="_blank" href="http://fma.alabama.gov/pdfs/Brochure_HomeProcessed-CottageFoodLaw.pdf">
+                      Home Processed Products &amp; Cottage Food Law
+                    </a>
+                  </v-list-tile-title>
+                </v-list-tile-content>
+              </v-list-tile>
+            </v-list>
+          </v-navigation-drawer>
+        </v-layout>
+
       <router-view></router-view>
     </v-content>
   </v-app>
 </template>
-
-<script>
-import Vue from "vue";
-export default {
-  data() {
-    return {
-      cordova: Vue.cordova
-    };
-  },
-  created() {
-    var self = this;
-    this.cordova.on("deviceready", () => {
-      self.onDeviceReady();
-    });
-  },
-  methods: {
-    onDeviceReady: function() {
-      // Handle the device ready event.
-      this.cordova.on("pause", this.onPause, false);
-      this.cordova.on("resume", this.onResume, false);
-      if (this.cordova.device.platform === "Android") {
-        document.addEventListener("backbutton", this.onBackKeyDown, false);
-      }
-    },
-    onPause() {
-      // Handle the pause lifecycle event.
-      console.log("pause");
-    },
-    onResume() {
-      // Handle the resume lifecycle event.
-      // SetTimeout required for iOS.
-      setTimeout(function() {
-        console.log("resume");
-      }, 0);
-    },
-    onBackKeyDown() {
-      // Handle the back-button event on Android. By default it will exit the app.
-      navigator.app.exitApp();
-    }
-  }
-};
-</script>
 
 <style>
 body {

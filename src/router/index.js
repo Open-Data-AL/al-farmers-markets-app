@@ -1,15 +1,15 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Hello from '@/components/Hello';
+import MarketsList from '@/components/MarketsList';
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'Hello',
-      component: Hello,
-    },
+        path: '/markets-list',
+        name: 'MarketsList',
+        component: MarketsList
+    }
   ],
 });
