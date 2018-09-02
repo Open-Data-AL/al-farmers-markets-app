@@ -18,22 +18,23 @@
             </v-layout>
           </v-container>
 
+          <img src="/static/img/NewHeaderPic1.jpg" />
+
           <v-navigation-drawer
             v-model="drawer"
             absolute
             temporary
           >
-            <v-list class="pa-1">
+            <!--<v-list class="pa-1">
               <v-list-tile avatar>
                 <v-list-tile-avatar>
-                 <!-- <img src="https://randomuser.me/api/portraits/men/85.jpg">-->
                 </v-list-tile-avatar>
 
                 <v-list-tile-content>
                   <v-list-tile-title>John Leider</v-list-tile-title>
                 </v-list-tile-content>
               </v-list-tile>
-            </v-list>
+            </v-list> -->
 
             <v-list class="pt-0" dense>
               <v-divider></v-divider>

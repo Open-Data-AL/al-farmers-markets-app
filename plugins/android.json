@@ -7,14 +7,14 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.elijahlofgren.almarkers"
-    },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.elijahlofgren.almarkers"
+      "PACKAGE_NAME": "com.elijahlofgren.alfarmersmarkets"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.elijahlofgren.alfarmersmarkets"
     },
     "cordova-plugin-geolocation": {
-      "PACKAGE_NAME": "com.elijahlofgren.almarkers"
+      "PACKAGE_NAME": "com.elijahlofgren.alfarmersmarkets"
     }
   },
   "dependent_plugins": {}
