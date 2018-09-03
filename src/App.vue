@@ -18,8 +18,6 @@
             </v-layout>
           </v-container>
 
-          <img src="/static/img/NewHeaderPic1.jpg" />
-
           <v-navigation-drawer
             v-model="drawer"
             absolute
