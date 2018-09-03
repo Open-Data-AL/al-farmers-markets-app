@@ -8,12 +8,13 @@
           style="height: 200px;"
         >
           <v-container>
-            <v-layout justify-left>
+            <v-layout style="position: absolute; top:0; left: 0;">
               <v-btn
                 dark
                 @click.stop="drawer = !drawer"
               >
-                Menu
+              <v-icon>menu</v-icon>
+
               </v-btn>
             </v-layout>
           </v-container>
