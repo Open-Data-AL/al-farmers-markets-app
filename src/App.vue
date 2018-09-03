@@ -39,7 +39,7 @@
 
               <v-list-tile>
                 <v-list-tile-action>
-                  <v-icon>dashboard</v-icon>
+                  <v-icon>store</v-icon>
                 </v-list-tile-action>
 
                 <v-list-tile-content>
@@ -51,17 +51,78 @@
 
                <v-list-tile>
                 <v-list-tile-action>
-                  <v-icon>question_answer</v-icon>
+                  <v-icon>open_in_new</v-icon>
                 </v-list-tile-action>
 
                 <v-list-tile-content>
                   <v-list-tile-title>
-                    <a target="_blank" href="http://fma.alabama.gov/pdfs/Brochure_HomeProcessed-CottageFoodLaw.pdf">
-                      Home Processed Products &amp; Cottage Food Law
+                    <a target="_blank" href="http://www.fma.alabama.gov/HomeProc.aspx">
+                      Home Processed Rule
                     </a>
                   </v-list-tile-title>
                 </v-list-tile-content>
               </v-list-tile>
+
+              <v-list-tile>
+                <v-list-tile-action>
+                  <v-icon>open_in_new</v-icon>
+                </v-list-tile-action>
+
+                <v-list-tile-content>
+                  <v-list-tile-title>
+                    <a target="_blank" href="http://www.fma.alabama.gov/PDFs_NEW/Shell_Eggs.pdf">
+                      Shell Egg Law
+                    </a>
+                  </v-list-tile-title>
+                </v-list-tile-content>
+              </v-list-tile>
+
+              <v-list-tile>
+                <v-list-tile-action>
+                  <v-icon>open_in_new</v-icon>
+                </v-list-tile-action>
+
+                <v-list-tile-content>
+                  <v-list-tile-title>
+                    <a target="_blank" href="http://www.fma.alabama.gov/pdfs/CertifiedFarmersMarketRules_80-7-1.pdf">
+                      Certified Farmers Market
+                    </a>
+                  </v-list-tile-title>
+                </v-list-tile-content>
+              </v-list-tile>
+
+              <v-list-tile>
+                <v-list-tile-action>
+                  <v-icon>open_in_new</v-icon>
+                </v-list-tile-action>
+
+                <v-list-tile-content>
+                  <v-list-tile-title>
+                    <a target="_blank" href="http://www.fma.alabama.gov/pdfs/Brochure-DirectMarketGuidelines2.pdf">
+                      Direct Market Guidelines
+                    </a>
+                  </v-list-tile-title>
+                </v-list-tile-content>
+              </v-list-tile>
+
+
+          <v-list-tile>
+                <v-list-tile-action>
+                  <v-icon>open_in_new</v-icon>
+                </v-list-tile-action>
+
+ 
+              <v-list-tile-content>
+                  <v-list-tile-title>
+                  </v-list-tile-title>
+                                    <a target="_blank" href="http://www.fma.alabama.gov/pdfs/Brochure_HomeProcessed-CottageFoodLaw.pdf">
+                                        Home Processed Products &amp; Cottage Food Law
+                    </a>
+
+                </v-list-tile-content>
+              </v-list-tile>
+              
+
             </v-list>
           </v-navigation-drawer>
         </v-layout>
